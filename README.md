@@ -88,6 +88,8 @@ k6 raport
 
 ![image](https://github.com/piotreksda/ProducerConsumerPerf/assets/23263384/7b3da52c-64dd-4bfb-82cb-a592cc2e0ddd)
 
+* there is bug of time should be 08:09 
+
 docker CPU usage
 
 ![image](https://github.com/piotreksda/ProducerConsumerPerf/assets/23263384/3081a496-b06f-4856-b31a-6f3a83eac5fd)
@@ -108,6 +110,7 @@ The container only has access to one core, and with the test I achieved its crit
 k6 raport
 
 ![image](https://github.com/piotreksda/ProducerConsumerPerf/assets/23263384/7e24f673-ae4e-48bd-aa3b-f4c722e2131c)
+
 
 docker CPU usage
 
