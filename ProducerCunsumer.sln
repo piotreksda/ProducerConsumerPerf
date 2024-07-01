@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{70137907-1F6A-45B2-88B3-103481114170}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{70CB297F-482F-4287-AEE2-7F091701F24F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Producer", "src\Producer\Producer.csproj", "{D12759C6-41DF-4C1D-B65F-3D08677AEB12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consumer", "src\Consumer\Consumer.csproj", "{45451440-AF90-4271-A98E-81D971CD86FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "config", "config", "{EFBB6CE0-8E69-407F-8ED6-A9BE1E018FDE}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yaml = docker-compose.yaml
+		nginx.conf = nginx.conf
+		k6.js = k6.js
+		k6plot.py = k6plot.py
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventCatalog", "src\EventCatalog\EventCatalog.csproj", "{91DE5EDA-E499-4940-BCFE-52B582F46BE1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D12759C6-41DF-4C1D-B65F-3D08677AEB12} = {70137907-1F6A-45B2-88B3-103481114170}
+		{45451440-AF90-4271-A98E-81D971CD86FB} = {70137907-1F6A-45B2-88B3-103481114170}
+		{91DE5EDA-E499-4940-BCFE-52B582F46BE1} = {70137907-1F6A-45B2-88B3-103481114170}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D12759C6-41DF-4C1D-B65F-3D08677AEB12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D12759C6-41DF-4C1D-B65F-3D08677AEB12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D12759C6-41DF-4C1D-B65F-3D08677AEB12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D12759C6-41DF-4C1D-B65F-3D08677AEB12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45451440-AF90-4271-A98E-81D971CD86FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45451440-AF90-4271-A98E-81D971CD86FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45451440-AF90-4271-A98E-81D971CD86FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45451440-AF90-4271-A98E-81D971CD86FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91DE5EDA-E499-4940-BCFE-52B582F46BE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91DE5EDA-E499-4940-BCFE-52B582F46BE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91DE5EDA-E499-4940-BCFE-52B582F46BE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91DE5EDA-E499-4940-BCFE-52B582F46BE1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
