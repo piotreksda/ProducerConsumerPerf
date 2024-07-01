@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "config", "config", "{EFBB6C
 		nginx.conf = nginx.conf
 		k6.js = k6.js
 		k6plot.py = k6plot.py
+		nginx-loadbalancer.conf = nginx-loadbalancer.conf
+		docker-compose-loadbalancer.yaml = docker-compose-loadbalancer.yaml
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventCatalog", "src\EventCatalog\EventCatalog.csproj", "{91DE5EDA-E499-4940-BCFE-52B582F46BE1}"
