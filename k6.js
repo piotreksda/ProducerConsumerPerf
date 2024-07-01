@@ -2,12 +2,6 @@ import http from 'k6/http';
 import { sleep, check } from 'k6';
 import { htmlReport } from "https://raw.githubusercontent.com/benc-uk/k6-reporter/main/dist/bundle.js";
 
-
-// export const options = {
-//     vus: 100, // Number of virtual users
-//     duration: '1m', // Duration of the test
-// };
-
 export const options = {
     discardResponseBodies: true,
     scenarios: {
@@ -28,7 +22,7 @@ export default function () {
     check(res, {
         'is status 200': (r) => r.status === 200,
     });
-    sleep(0.5); // Adding a sleep to prevent too many requests per second
+    sleep(0.5);
 }
 
 export function handleSummary(data) {

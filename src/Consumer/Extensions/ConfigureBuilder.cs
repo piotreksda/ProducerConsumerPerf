@@ -33,7 +33,7 @@ public static class ConfigureBuilder
     public static WebApplicationBuilder UseOpenTelemetry(this WebApplicationBuilder builder)
     {
         var serviceName = "Consumer";
-        var serviceVersion = "1.0.0"; // You can also specify the version of your service
+        var serviceVersion = "1.0.0";
 
         var resourceBuilder = ResourceBuilder.CreateDefault()
             .AddService(serviceName: serviceName, serviceVersion: serviceVersion);

@@ -31,13 +31,6 @@ public static class ConfigureBuilder
         
         endpointConfiguration.EnableOpenTelemetry();
         
-        // endpointConfiguration.EnableMetrics();
-
-        // var routing = transport.Routing();
-        // routing.RouteToEndpoint(
-        //     assembly: typeof(TestEvent).Assembly,
-        //     destination: "Consumer");
-
         builder.UseNServiceBus(endpointConfiguration);
         
         return builder;
@@ -46,7 +39,7 @@ public static class ConfigureBuilder
     public static WebApplicationBuilder UseOpenTelemetry(this WebApplicationBuilder builder)
     {
         var serviceName = "Producer";
-        var serviceVersion = "1.0.0"; // You can also specify the version of your service
+        var serviceVersion = "1.0.0";
 
         var resourceBuilder = ResourceBuilder.CreateDefault()
             .AddService(serviceName: serviceName, serviceVersion: serviceVersion);

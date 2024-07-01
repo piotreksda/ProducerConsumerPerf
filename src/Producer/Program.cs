@@ -23,8 +23,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-// app.MapGet("test", () => "Hello world publisher");
-
 app.MapGet("test", async (IMessageSession messageSession) =>
 {
     await messageSession.Publish(new TestEvent(Guid.NewGuid()));
